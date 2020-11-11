@@ -71,6 +71,10 @@ p,h1, span {
   color: #ffff
 }
 
+.title-text {
+  letter-spacing: 10px;
+}
+
 p {
   font-size:30px;
   font-style: italic;
@@ -207,3 +211,26 @@ label {
   margin: 10px 0px 0px 10px;
 }
 
+footer {
+  display: flex;
+  background-color: #28b485;
+  align-items: center;
+}
+
+.copy-right {
+  color: #000;
+  font-size: 15px;
+  margin-left: 2px;
+}
+
+.love {
+  width: 20px;
+  height: 20px;
+  margin-left: 3px;
+}
+
+.heart {
+ display: flex;
+ align-items: center;
+ margin-left: 70rem;
+}
