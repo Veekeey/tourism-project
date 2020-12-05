@@ -15,9 +15,8 @@ html {
   scroll-behavior: smooth;
 }
 
-.containter {
-  display: flex;
-  overflow-x: hidden;
+.container {
+  
 }
 
 /* navigation bar */
@@ -317,10 +316,11 @@ footer {
 /* responsiveness */
 @media screen and (max-width: 768px) {
 
+
   .title {
     height: 25rem;
     clip-path: polygon(0 0, 100% 0, 100% 34vh, 0 100%);
-    width: 140%;
+    width: 100vw
   }
 
   .title-text {
