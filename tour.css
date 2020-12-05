@@ -319,7 +319,7 @@ footer {
 
   .title {
     height: 25rem;
-    clip-path: polygon(0 0, 100% 0, 100% 56vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 34vh, 0 100%);
     width: 140%;
   }
 
