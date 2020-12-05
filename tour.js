@@ -13,9 +13,9 @@ function handleClick() {
 
     document.onclick = function(e){
 
-        let currentId = e.target.getAttribute('id');
+        let currentId = e.target.getAttribute('id');      
       
-        for(let data in allData){
+        for(let data in allData){  
             if(allData[data].id == currentId ){
 
                 renderModal(allData[data].description);
