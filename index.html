@@ -8,99 +8,147 @@
 </head>
 <body>
   <div class="container">
+
+    <!-- navigation bar -->
     <nav class="navbar">
       <ul>
-       <li><a class="link" href="#">HOME</a></li>
-       <li><a class="link" href="#">PLACES</a></li>
-       <li><a class="link" href="#">BOOKING</a></li>
-       <li><a class="link" href="#">CONTACT</a></li>
+       <li><a class="link" href="#title">HOME</a></li>
+       <li><a class="link" href="#places">PLACES</a></li>
+       <li><a class="link" href="#booking">BOOKING</a></li>
+       <li><a class="link" href="#contact">CONTACT</a></li>
      </ul>
     </nav>
-      <div class="title">
+
+      <!-- title section -->
+      <div class="title" id="title">
         <h1 class="title-text">HOME AWAY FROM HOME</h1>
         <p>........for enjoyable views and fun experiences.</p>
-        <button class="find">FIND OUR TOURS</button>
+        <a href="#places" class="find">OUR TOURS</a>
       </div>
-      <div class="places">
+
+
+      <!-- tour places -->
+     <div class="places" id="places">
+       <div  class="images" id="civic">
+         <img  onclick="handleClick()" src="img edit/civic center lagos.jpg" alt="" id="civic">
+         <span class="caption">CIVIC CENTER LAGOS</span>
+       </div>
+
       <div class="images">
-        <img src="img edit/civic center lagos.jpg" alt="">
-        <span class="caption">CIVIC CENTER LAGOS</span>
+       <img onclick="handleClick()" src="img edit/Coconut-Beach.jpg" alt="" id="coconut">
+       <span class="caption">COCONUT-BEACH</span>
       </div>
+      
+
       <div class="images">
-        <img src="img edit/Coconut-Beach.jpg" alt="">
-        <span class="caption">COCONUT-BEACH</span>
-      </div>
-      <div class="images">
-        <img src="img edit/Giant-Foot-of-Ukhuse-Oke.jpg" alt="">
+        <img onclick="handleClick()" src="img edit/Giant-Foot-of-Ukhuse-Oke.jpg" alt="" id="giant">
         <span class="caption">GIANT-FOOT-OF-UKHUSE-OKE</span>
       </div>
+      
+
       <div class="images">
-        <img src="img edit/ibeno beach akwa-ibom.jpg" alt="">
+        <img onclick="handleClick()" src="img edit/ibeno beach akwa-ibom.jpg" alt="" id="ibeno">
         <span class="caption">IBENO BEACH AKWA-IBOM</span>
       </div>
+      
+
       <div class="images">
-        <img src="img edit/Kainji-Lake-national-parks.jpg" alt="">
+        <img onclick="handleClick()" src="img edit/Kainji-Lake-national-parks.jpg" alt="" id="kainji">
         <span class="caption">KAINJI-LAKE</span>
       </div>
+      
+
       <div class="images">
-        <img src="img edit/kajuru castle kaduna.jpg" alt="">
+        <img onclick="handleClick()" src="img edit/kajuru castle kaduna.jpg" alt="" id="kajuru">
         <span class="caption">KAJURU CASTLE KADUNA</span>
       </div>
+
+
       <div class="images">
-        <img src="img edit/kano-city-wall-780x520.jpg" alt="">
+        <img onclick="handleClick()" src="img edit/kano-city-wall-780x520.jpg" alt="" id="kano">
         <span class="caption">KANO CITY WALL</span>
       </div>
+       
+
       <div class="images">
-        <img src="img edit/millenium-park-abuja.jpg" alt="">
+        <img onclick="handleClick()" src="img edit/millenium-park-abuja.jpg" alt="" id="millenium">
         <span class="caption">MILLENIUM PARK ABUJA</span>
       </div>
+    
+
       <div class="images">
-        <img src="img edit/national museum.jpg" alt="">
+        <img onclick="handleClick()" src="img edit/national museum.jpg" alt="" id="museum">
         <span class="caption">NATIONAL MUSEUM LAGOS</span>
       </div>
+      
+
       <div class="images">
-        <img src="img edit/obudu.jpg" alt="">
+        <img onclick="handleClick()" src="img edit/obudu.jpg" alt="" id="obudu">
         <span class="caption">OBUDU CATTLE RANCH CROSS-RIVER</span>
       </div>
+     
+
       <div class="images">
-        <img src="img edit/silverbird_galleria.jpg" alt="">
+        <img onclick="handleClick()" src="img edit/silverbird_galleria.jpg" alt="" id="silverbird">
         <span class="caption">SILVERBIRD GALLERIA</span>
       </div>
+
+
       <div class="images">
-        <img src="img edit/Yankari-Game-Reserve.jpeg" alt="">
+        <img onclick="handleClick()" src="img edit/Yankari-Game-Reserve.jpeg" alt="" id="yankari">
         <span class="caption">YANKARI GAME RESERVE BAUCHI</span>
       </div>
+    </div>
+
+
+      <!-- modal section -->
+      <div class="modal" id="bigmod">
+        <div class="modal-inner" id="mod">
+           <img onclick="closeModal()" id="cancel" src="pics/close icon.png" alt="close">
+           <a href="#booking" onclick="closeModal()" class="find" id="book-btn">BOOK NOW</a>
+        </div>
       </div>
+
+      <!-- contact and booking section -->
       <section class="to-go">
-        <div class="contact">
+        <!-- contact -->
+        <div class="contact" id="contact">
           <h3>Contact us here:</h3>
+          <!-- contact icons -->
           <div class="social-contact">
-            <a  href="#" target="_blank"><img class="icons" src="pics/instagram.svg" alt=""><span>Instagram</span></a>
-            <a  href="#" target="_blank"><img class="icons" src="pics/facebook.svg" alt=""><span>Facebook</span></a>
-            <a  href="#" target="_blank"><img class="icons" src="pics/twitter.svg" alt=""><span>Twitter</span></a>
-            <a  href="#" target="_blank"><img class="icons" src="pics/smartphone.svg" alt=""><span>0800008888</span></a>
+            <a  href="" target="_blank"><img class="icons" src="pics/instagram.svg" alt=""><span>Instagram</span></a>
+            <a  href="" target="_blank"><img class="icons" src="pics/facebook.svg" alt=""><span>Facebook</span></a>
+            <a  href="" target="_blank"><img class="icons" src="pics/twitter.svg" alt=""><span>Twitter</span></a>
+            <a  href="" target="_blank"><img class="icons" src="pics/smartphone.svg" alt=""><span>0800008888</span></a>
           </div>
         </div>
-        <div class="booking">
+        <!-- booking -->
+        <div class="booking" id="booking">
           <h2>You can book for a tour here......... </h2>
+          <!-- booking form -->
           <form action="">
             <label for="name">Full Name</label>
-            <input type="text" name="name" id="fullname" placeholder="Enter Your Name">
+            <input type="text" name="name" class="fullname" placeholder="Enter Your Name">
+            <span class="error"><small>Field cannot be empty....</small></span>
             <label for="email">Email</label>
-            <input type="email" name="email" id="email" placeholder="Enter a valid email address">
+            <input type="email" name="email" class="email" placeholder="Enter a valid email address" required>
+            <span class="email-error"><small>Invalid Email!</small></span>
             <label for="phone">Phone number</label>
-            <input type="text" name="phone" id="phone-num" placeholder="Phone number">
-            <input type="submit" value="submit" class="find find-submit">
+            <input type="text" name="phone" class="phone-num" placeholder="Phone number">
+            <span class="phone-error"><small>Phone number should be 11-digits....</small></span>
+            <button type="button" class="find find-submit">Submit</button>
           </form>
         </div>
       </section>
+
+      <!-- footer -->
       <footer>
-       <p class="copy-right">(©) 2020, Veekeey.</p>
-       <div class="heart">
-       <p class="copy-right">Crafted with</p><img src="pics/white-heart.svg" class="love">
-      </div>
+       <p class="copy-right">(©) 2020, Veekeey.</p> 
       </footer>
   </div>
-  <script src="tour.js"></script>
+ 
+  <!-- javascript link -->
+  <script src="data.js" type="text/javascript"></script>
+  <script src="tour.js" type="text/javascript"></script>
 </body>
 </html>
